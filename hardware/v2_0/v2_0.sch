@@ -1,0 +1,111 @@
+EESchema Schematic File Version 5
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title "Four DC-Motor Controller"
+Date ""
+Rev ""
+Comp "Benjamin Vedder & Joel Svensson"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
+$EndDescr
+$Sheet
+S 4500 2300 1250 1850
+U 5AF92F5C
+F0 "base_sheet" 50
+F1 "base.sch" 50
+F2 "DRV1_A1" I R 5750 3250 50 
+F3 "DRV1_A2" I R 5750 3350 50 
+F4 "DRV1_B1" I R 5750 3450 50 
+F5 "DRV1_B2" I R 5750 3550 50 
+F6 "DRV2_B1" I R 5750 3900 50 
+F7 "DRV2_A2" I R 5750 3800 50 
+F8 "DRV2_A1" I R 5750 3700 50 
+F9 "DRV2_B2" I R 5750 4000 50 
+F10 "NFAULT_DRV1" I R 5750 2900 50 
+F11 "NFAULT_DRV2" I R 5750 3000 50 
+F12 "MTR1_PWM" I R 5750 2600 50 
+F13 "MTR2_PWM" I R 5750 2700 50 
+F14 "NRFSWDIO" I L 4500 2900 50 
+F15 "NRFSWDCLK" I L 4500 3050 50 
+$EndSheet
+$Sheet
+S 800  4600 1750 1400
+U 5B1BB5D0
+F0 "power_sheet" 50
+F1 "power.sch" 50
+$EndSheet
+Text Notes 950  4850 0    50   ~ 0
+5V, 3.3V
+$Sheet
+S 3250 4700 1750 1350
+U 5B4411CA
+F0 "mounitng_sheet" 50
+F1 "mounting.sch" 50
+$EndSheet
+Text Notes 3600 4950 0    50   ~ 0
+Mounting holes\n
+$Sheet
+S 6600 2450 1100 1650
+U 5B516B04
+F0 "motor_control_sheet" 50
+F1 "motor_control.sch" 50
+F2 "DRV1_NFAULT" I L 6600 2900 50 
+F3 "DRV2_NFAULT" I L 6600 3000 50 
+F4 "DRV1_A1" I L 6600 3250 50 
+F5 "DRV1_A2" I L 6600 3350 50 
+F6 "DRV1_B1" I L 6600 3450 50 
+F7 "DRV1_B2" I L 6600 3550 50 
+F8 "DRV2_B2" I L 6600 4000 50 
+F9 "DRV2_B1" I L 6600 3900 50 
+F10 "DRV2_A2" I L 6600 3800 50 
+F11 "DRV2_A1" I L 6600 3700 50 
+F12 "MTR1_PWM" I L 6600 2600 50 
+F13 "MTR2_PWM" I L 6600 2700 50 
+$EndSheet
+$Sheet
+S 2400 2350 950  1350
+U 5CF66F52
+F0 "nrf52" 50
+F1 "nrf52.sch" 50
+F2 "NRFSWDIO" I R 3350 2900 50 
+F3 "NRFSWDCLK" I R 3350 3050 50 
+$EndSheet
+Wire Wire Line
+	5750 3250 6600 3250
+Wire Wire Line
+	5750 3350 6600 3350
+Wire Wire Line
+	5750 3450 6600 3450
+Wire Wire Line
+	5750 3550 6600 3550
+Wire Wire Line
+	5750 3700 6600 3700
+Wire Wire Line
+	5750 3800 6600 3800
+Wire Wire Line
+	5750 3900 6600 3900
+Wire Wire Line
+	5750 4000 6600 4000
+Wire Wire Line
+	5750 2900 6600 2900
+Wire Wire Line
+	5750 3000 6600 3000
+Wire Wire Line
+	5750 2600 6600 2600
+Wire Wire Line
+	5750 2700 6600 2700
+Wire Wire Line
+	4500 2900 3350 2900
+Wire Wire Line
+	3350 3050 4500 3050
+$EndSCHEMATC
